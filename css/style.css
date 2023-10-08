@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body, input, button {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.login {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.loginBackG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.loginForm {
+  position : relative;
+  margin-inline : 24px;
+  background : transparent;
+  border : 2px solid white;
+  padding : 40px 16px;
+  color : white;
+  border-radius : 20px;
+  backdrop-filter : blur(10px);
+}
+
+.loginTitle {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.loginInputs, .loginBox {
+  display: grid;
+}
+
+.loginInputs {
+ row-gap : 20px; 
+ margin-bottom : 16px; 
+}
+
+.loginBox {
+    grid-template-columns:1fr max-content; 
+    column-gap:12px; 
+    align-items:center; 
+    border:2px solid hsla(0,0%,100%,.7); 
+    padding-inline:20px; 
+    border-radius:64px; 
+}
+  
+
+.loginInput, .loginButton {
+  border: none;
+  outline: none;
+}
+
+.loginInput {
+  width: 100%;
+  background: none;
+  color: white;
+  padding-block: 1rem;
+}
+
+.loginInput::placeholder {
+  color: white;
+}
+
+.loginBox i {
+  font-size: 1.25rem;
+}
+
+.loginCheck, .loginCheckBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loginCheck {
+  margin-bottom: 1rem;
+  font-size: .813rem;
+}
+
+.loginCheckBox {
+  column-gap: .5rem;
+}
+
+.loginCheckInput {
+  width: 1rem;
+  height: 1rem;
+  accent-color: white;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 4rem;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  transition : .6s;
+  overflow : hidden;
+}
+
+.loginButton:focus {
+    outline : none;
+}
+
+.loginButton:before {
+    content : '';
+    display : block;
+    position : absolute;
+    background-color: rgba(255, 255, 255, .5);
+    width : 2px; 
+    height : 50%;
+    left : 0;
+    top : 0;
+    opacity : .5s;
+    filter : blur(30px);
+    transform : translate(-130px) skew(-15deg);
+}
+
+.loginButton:after {
+    content : '';
+    display : block;
+    position : absolute;
+    background-color: rgba(255, 255, 255, .2);
+    width : 2px; 
+    height : 50%;
+    left : 30px;
+    top : 0;
+    opacity : 0;
+    filter : blur(30px);
+    transform : translate(-100px) skew(-15deg);
+}
+
+.loginButton:hover {
+    background-color: rgb(11, 206, 255);
+    color : white;
+    cursor : pointer;
+}
+
+.loginButton:before {
+    transform : translate(300px) skew(-15deg);
+    opacity : .6;
+    transition : .7s;
+}
+
+.loginButton:after {
+    transform : translate(300px) skew(-15deg);
+    opacity : 1;
+    transition : .7s;
+}
+
+.loginRegister {
+  font-size: .813rem;
+  text-align: center;
+}
+
+.loginRegister a {
+  color: white;
+  font-weight: 500;
+}
+
+.loginRegister a:hover {
+  text-decoration: underline;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .login {
+    justify-content: center;
+  }
+  .loginForm {
+    width: 420px;
+    padding-inline: 2.5rem;
+  }
+  .loginTitle {
+    margin-bottom: 2rem;
+  }
+}
