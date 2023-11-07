@@ -8,45 +8,74 @@
         <meta name="description" content="descripció de la pàgina" />
         <meta name="keywords" content="paraules clau de la pàgina" />
         <meta name="robots" content="(no)index, (no)follow" />
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/signin.css">
         <link rel="icon" href="img/ProvisionalIcon.jpg" type="image/x-icon">
     </head>
 
     <body>
-        <div class="login">
-            <img src="img/Fondo.png" alt="background-image" class="loginBackG">
+        <div class="signin">
+            <img src="img/Fondo.png" alt="background-image" class="signinBackG">
             
-            <form action="" class="loginForm">
-               <h1 class="loginTitle">Sing In</h1>
+            <form action="" class="signinForm">
+               <h1 class="signinTitle">Registrarse</h1>
                
-               <div class="loginInputs">
-                  <div class="loginBox">
-                     <input type="name" placeholder="Name" required class="loginInput">
+               <div class="signinInputs">
+                  <div class="signinBox">
+                     <input type="name" name="userName" placeholder="Nombre" required class="signinInput">
                      <i class="fillEmail"></i>
+               </div>
+        
+               <div class="signinInputs">
+                  <div class="signinBox">
+                     <input type="surname" name="userSurname" placeholder="Apellidos" required class="signinInput">
+                     <i class="fillEmail"></i>
+               </div>
+        
+               <div class="signinInputs">
+                  <div class="signinBox">
+                     <input type="tel" name="userPhone" placeholder="Telefono movil" required class="signinInput">
+                     <i class="fillPhone"></i>
+                  </div>
+               </div>
+        
+               <div class="signinInputs">
+                  <div class="signinBox">
+                     <input type="text" name="userBirthDate" placeholder="Fecha de nacimiento" required class="signinInput">
+                     <i class="fillDate"></i>
+                  </div>
+               </div>
+        
+               <div class="signinInputs">
+                  <div class="signinBox">
+                     <input type="text" name="userPostalCode" placeholder="Codigo postal" required class="signinInput">
+                     <i class="fillPostalCode"></i>
+                  </div>
+               </div>
+        
+               <div class="signinInputs">
+                  <div class="signinBox">
+                     <input type="text" name="userHomeAddress" placeholder="Dirección" required class="signinInput">
+                     <i class="fillAddress"></i>
+                  </div>
                </div>
 
-               <div class="loginInputs">
-                  <div class="loginBox">
-                     <input type="surname" placeholder="Surname" required class="loginInput">
+               <div class="signinInputs">
+                  <div class="signinBox">
+                     <input type="email" name="userEmail" placeholder="Email" required class="signinInput">
                      <i class="fillEmail"></i>
                </div>
-
-               <div class="loginInputs">
-                  <div class="loginBox">
-                     <input type="email" placeholder="Email" required class="loginInput">
-                     <i class="fillEmail"></i>
-               </div>
-   
-                  <div class="loginBox">
-                     <input type="password" placeholder="Password" required class="loginInput">
+        
+               <div class="signinInputs">
+                  <div class="signinBox">
+                     <input type="password" name="userPassword" placeholder="Contraseña" required class="signinInput">
                      <i class="fillPass"></i>
                   </div>
                </div>
    
-               <button type="submit" class="loginButton">Sing In</button>
+               <button type="submit" class="signinButton">Registrarse</button>
    
-               <div class="loginRegister">
-                  Do you have already an account? <a href="login.html">LogIn</a>
+               <div class="singinRegister">
+                  Ya tienes una cuenta? <a href="login.html">Iniciar Sesión</a>
                </div>
             </form>
          </div>
