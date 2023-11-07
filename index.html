@@ -8,31 +8,44 @@
         <meta name="description" content="descripció de la pàgina" />
         <meta name="keywords" content="paraules clau de la pàgina" />
         <meta name="robots" content="(no)index, (no)follow" />
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
         <link rel="icon" href="img/ProvisionalIcon.jpg" type="image/x-icon">
     </head>
 
     <body>
         <header>
-            <nav>
-                <input type="checkbox" id="checkIndex">
-                <label for="check" class="checkbtnIndex">
-                  <i class="fas fa-bars"></i>
-                </label>
-                <label class="logo">DesignX</label>
-                <ul>
-                  <li><a class="active" href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Feedback</a></li>
-                </ul>
-              </nav>   
-            <!-- Aquí puedes agregar más elementos al encabezado como el logotipo, la barra de navegación, etc. -->
+            <div class="left">
+                <a class="cta" href="#"><button>Mostrar Productos</button></a>
+                <a class="cta" href="#"><button style="direction: rtl;"><img src="img/shopping-cart-dollar.png" alt="Carrito" 
+                    style="width:15px; height:15px;"> Carrito</button></a>
+            </div>
+            <h1>TouchWave</h1>
+            <div class="right">
+                <a class="cta" href="singin.html"><button>Registrarse</button></a>
+                <a class="cta" href="login.html"><button>Iniciar Sesión</button></a>
+            </div>
         </header>
-
         <main>
-            <!-- Aquí puedes listar los móviles disponibles para la venta. -->
+            <div class="marca" onclick="alert('Haz clic en el rectángulo!')">
+                <img src="img/Apple_logo_grey.svg" alt="Imagen" class="marca-image">
+                <p class="marca-text">APPLE</p>
+            </div>
+            <div class="marca" onclick="alert('Haz clic en el rectángulo!')">
+                <img src="img/Huawei_Standard_logo.svg" alt="Imagen" class="marca-image">
+                <p class="marca-text">HUAWEI</p>
+            </div>
+            <div class="marca" onclick="alert('Haz clic en el rectángulo!')">
+                <img src="img/Xiaomi_logo.svg" alt="Imagen" class="marca-image">
+                <p class="marca-text">XIAOMI</p>
+            </div>
+            <div class="marca" onclick="alert('Haz clic en el rectángulo!')">
+                <img src="img/Samsung_Logo.svg" alt="Imagen" class="marca-image">
+                <p class="marca-text">SAMSUNG</p>
+            </div>
+            <div class="marca" onclick="alert('Haz clic en el rectángulo!')">
+                <img src="img/OPPO_LOGO_2019.svg" alt="Imagen" class="marca-image">
+                <p class="marca-text">OPPO</p>
+            </div>
         </main>
 
         <footer>
