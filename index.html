@@ -22,9 +22,31 @@
             </div>
             <h1>TouchWave</h1>
             <div class="right">
-                <a class="cta" href="singin.html"><button>Registrarse</button></a>
-                <a class="cta" href="login.html"><button>Iniciar Sesión</button></a>
+                <!--<a class="cta" href="singin.html"><button>Registrarse</button></a>
+                <a class="cta" href="login.html"><button>Iniciar Sesión</button></a>-->
+                <button onclick="toggleMenu()">Menú</button>
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <h2>Nombre</h2>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link">
+                            <p>Mirar cuenta</p>
+                            <span></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <p>Mirar pedidos</p>
+                            <span></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <p>Cerrar sesión</p>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
             </div>
+            
         </header>
         <main>
             <div class="marca" onclick="selectMarca(this);">
