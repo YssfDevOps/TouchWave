@@ -8,7 +8,7 @@
         <meta name="description" content="descripció de la pàgina" />
         <meta name="keywords" content="paraules clau de la pàgina" />
         <meta name="robots" content="(no)index, (no)follow" />
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/mi-cuenta.css">
         <script type="text/javascript" src="js/script.js"></script>
         <link rel="icon" href="img/ProvisionalIcon.jpg" type="image/x-icon">
     </head>
@@ -49,36 +49,29 @@
             
         </header>
         <main>
-            <div class="marca" onclick="selectMarca(this);">
-                <img src="img/Apple_logo_grey.svg" alt="Imagen" class="marca-image">
-                <p class="marca-text">APPLE</p>
-            </div>
-            <div class="marca" onclick="selectMarca(this);">
-                <img src="img/Huawei_Standard_logo.svg" alt="Imagen" class="marca-image">
-                <p class="marca-text">HUAWEI</p>
-            </div>
-            <div class="marca" onclick="selectMarca(this);">
-                <img src="img/Xiaomi_logo.svg" alt="Imagen" class="marca-image">
-                <p class="marca-text">XIAOMI</p>
-            </div>
-            <div class="marca" onclick="selectMarca(this);">
-                <img src="img/Samsung_Logo.svg" alt="Imagen" class="marca-image">
-                <p class="marca-text">SAMSUNG</p>
-            </div>
-            <div class="marca" onclick="selectMarca(this);">
-                <img src="img/OPPO_LOGO_2019.svg" alt="Imagen" class="marca-image">
-                <p class="marca-text">OPPO</p>
-            </div>
-
-            <div class="producto">
-                <h2 class="producto-nombre">Samsung Galaxy A54</h2>
-                <img src="img/A52s.png" alt="Nombre del producto" class="producto-imagen">
-                <div class="producto-detalles">
-                    <p class="producto-descripcion">Descripción del producto</p>
-                    <p class="producto-precio">Precio del producto</p>
+            <div class="container">
+                <div class="rightbox">
+                    <div class="profile tabShow">
+                        <h1>Información personal</h1>
+                        <h2>Nombre</h2>
+                        <input type="text" value="Hola" class="input" readonly>
+                        <h2>Apellidos</h2>
+                        <input type="text" value="Apellidos" class="input" readonly>
+                        <h2>Numero de telefono</h2>
+                        <input type="tel" value="000000000" required class="input" readonly>
+                        <h2>Fecha de nacimiento</h2>
+                        <input type="text" value="Fecha de nacimiento" required class="input" readonly>
+                        <h2>Codigo postal</h2>
+                        <input type="text" value="Codigo postal" required class="input" readonly>
+                        <h2>Dirección</h2>
+                        <input type="text" value="Dirección" required class="input" readonly>
+                        <h2>Correo electronico</h2>
+                        <input type="email" value="Email" required class="input" readonly>
+                    </div>
                 </div>
-                <button class="add-to-cart">Añadir al carrito</button>
             </div>
+        </main>
+
         <footer>
             <!-- Aquí puedes agregar información de contacto, derechos de autor, etc. -->
         </footer>
