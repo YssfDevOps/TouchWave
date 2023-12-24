@@ -1,0 +1,77 @@
+/*-------- Shopping Cart --------*/
+#titolCarrito {
+    margin-left: 250px;
+    color:#ff523b;
+}
+
+.cart-page {
+    margin: 10px auto;
+}
+table {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+td {
+    padding: 10px 5px;
+}
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a {
+    color: #ff523b;
+    font-size: 13px;
+}
+td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+    width: 147%;
+}
+
+.total-price table {
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+.clear-cart {
+    text-align: right;
+    margin-bottom: 20px; /* Adjust this to add space between the link and the table */
+    margin-right: 250px;
+}
+
+.clear-cart a {
+    color: #ff523b; /* You can change this color */
+    text-decoration: none;
+    font-size: 18px; /* You can adjust this size */
+    left: 100px;
+}
