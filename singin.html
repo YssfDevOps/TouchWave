@@ -9,12 +9,56 @@
         <meta name="keywords" content="paraules clau de la pàgina" />
         <meta name="robots" content="(no)index, (no)follow" />
         <link rel="stylesheet" href="css/signin.css">
+        <link rel="stylesheet" href="css/header.css">
+        <script type="text/javascript" src="js/script.js"></script>
         <link rel="icon" href="img/ProvisionalIcon.jpg" type="image/x-icon">
     </head>
 
+    <header>
+      <div class="left">
+         <a class="cta" href="#"><button>Mostrar Productos</button></a>
+         <a class="cta" href="#"><button style="direction: rtl;"><img src="img/shopping-cart-dollar.png" alt="Carrito" 
+             style="width:15px; height:15px;"> Carrito</button></a>
+     </div>
+     <h1>TouchWave</h1>
+     <div class="right">
+         <div class="ResumCompra">
+             <h3>Resumen compra:</h3>
+             <p>Numero de productos: 2</p>
+             <p>Precio Total: 1859$</p>
+         </div>
+         
+         <!--<a class="cta" href="singin.html"><button>Registrarse</button></a>
+         <a class="cta" href="login.html"><button>Iniciar Sesión</button></a>-->
+         <button onclick="toggleMenu()">Menú</button>
+         <div class="sub-menu-wrap" id="subMenu">
+             <div class="sub-menu">
+                 <div class="user-info">
+                     <h2>Nombre</h2>
+                 </div>
+                 <hr>
+                 <a href="mi-cuenta.html" class="sub-menu-link">
+                     <p>Mirar cuenta</p>
+                     <span></span>
+                 </a>
+                 <a href="#" class="sub-menu-link">
+                     <p>Mirar pedidos</p>
+                     <span></span>
+                 </a>
+                 <a href="#" class="sub-menu-link">
+                     <p>Cerrar sesión</p>
+                     <span></span>
+                 </a>
+             </div>
+         </div>
+         <div style="clear: both;"></div>
+     </div>
+    </header>
+
+
     <body>
         <div class="signin">
-            <img src="img/Fondo.png" alt="background-image" class="signinBackG">
+            <img src="img/Fondo2.jpg" alt="background-image" class="signinBackG">
             
             <form action="" class="signinForm">
                <h1 class="signinTitle">Registrarse</h1>

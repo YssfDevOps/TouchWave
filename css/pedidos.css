@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(212,212,212,1) 67%, rgba(207,207,207,1) 100%);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#tituloPedido {
+    margin-left: 250px;
+    color:#ff523b;
+}
+
+.pedido-page {
+    margin: 10px auto;
+}
+table {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.info-pedido{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+td {
+    padding: 10px 5px;
+}
+td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.precio-total {
+    display: flex;
+    justify-content: flex-end;
+    width: 147%;
+}
+
+.precio-total table {
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+#info-pedido {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}

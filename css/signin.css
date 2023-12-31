@@ -1,4 +1,9 @@
-*{
+* {
+    box-sizing: border-box;
+    padding: 0;
+
+}
+body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -9,11 +14,6 @@ body, input, button {
   font-size: 16px;
 }
 
-a {
-  text-decoration: none;
-  color : lightblue;
-}
-
 .signinBackG img {
   display: block;
   max-width: 100%;
@@ -22,7 +22,7 @@ a {
 
 .signin {
   position: relative;
-  height: 100vh;
+  height: 86vh;
   display: grid;
   align-items: center;
 }
@@ -174,17 +174,17 @@ a {
     transition : .7s;
 }
 
-.signinRegister {
+.singinRegister {
   font-size: .813rem;
   text-align: center;
 }
 
-.signinRegister a {
+.singinRegister a {
   color: white;
   font-weight: 500;
 }
 
-.signinRegister a:hover {
+.singinRegister a:hover {
   text-decoration: underline;
 }
 
@@ -203,14 +203,12 @@ a {
   }
 }
 
-*{
+body {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-}
-body{
   font-family: sans-serif;
 }
 nav{

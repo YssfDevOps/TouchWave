@@ -18,7 +18,6 @@ h1 {
     color : white;
 }
 
-
 li, a, button {
     font-family: 'Trebuchet MS', sans-serif;
     font-weight: 500;
@@ -72,7 +71,17 @@ button:hover {
     background: linear-gradient(90deg, rgba(126,99,249,1) 34%, rgba(73,215,226,1) 100%, rgba(255,255,255,1) 100%);
 }
 
+.ResumCompra {
+    float: left;
+    margin-right: 150px;
+    color: white;
+}
+
 /*CSS DEL DESPLEGABLE*/
+.right button {
+    margin-top: 50px;
+}
+
 .sub-menu-wrap {
     position: absolute;
     top: 100%;
@@ -257,3 +266,4 @@ button:hover {
     left: 0; 
     width: 95%;
 }
+
