@@ -1,0 +1,116 @@
+/*-------- Shopping Cart --------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(212,212,212,1) 67%, rgba(207,207,207,1) 100%);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#titolCarrito {
+    margin-left: 250px;
+    color:#ff523b;
+}
+
+.cart-page {
+    margin: 10px auto;
+}
+table {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+td {
+    padding: 10px 5px;
+}
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a {
+    color: #ff523b;
+    font-size: 13px;
+}
+td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+    width: 147%;
+}
+
+.total-price table {
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+.clear-cart {
+    text-align: right;
+    margin-bottom: 20px; /* Adjust this to add space between the link and the table */
+    margin-right: 250px;
+}
+
+.clear-cart a {
+    color: #ff523b; /* You can change this color */
+    text-decoration: none;
+    font-size: 18px; /* You can adjust this size */
+    left: 100px;
+}
+
+.checkout {
+    justify-content: right;
+    text-align: right;
+    margin-right: 250px;
+}
+
+#checkout-button {
+    background-color: #ff0000;
+    color: white;
+    color: #000;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    border-radius: 10px solid #ff0000;
+}
+
+#checkout-button:hover {
+    background-color: white;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    border-radius: 2px;
+}

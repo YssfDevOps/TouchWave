@@ -1,0 +1,285 @@
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', sans-serif;
+    color : white;
+}
+
+header {
+    width: 100%;
+    position : relative;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgb(112,103,255);
+    background: linear-gradient(90deg, rgba(112,103,255,1) 0%, rgba(73,215,226,1) 61%, rgba(255,255,255,1) 100%);
+}
+
+header li, header a, header button {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    color : black;
+    text-decoration: none;
+}
+
+header .left, header .right {
+    position: absolute;
+}
+
+header .left {
+    left: 0;
+    padding-left: 200px;
+}
+
+header .right {
+    right: 0;
+    padding-right: 200px;
+}
+
+header .logo {
+    cursor : pointer;
+}
+
+header button {
+    padding : 10px 35px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+}
+
+header button:hover {
+    color: white;
+    background: rgb(126,99,249);
+    background: linear-gradient(90deg, rgba(126,99,249,1) 34%, rgba(73,215,226,1) 100%, rgba(255,255,255,1) 100%);
+}
+
+header .ResumCompra {
+    float: left;
+    margin-right: 150px;
+    color: white;
+}
+
+.ResumCompra p {
+    color: white;
+}
+
+/*CSS DEL DESPLEGABLE*/
+header .right button {
+    margin-top: 50px;
+}
+
+header .sub-menu-wrap {
+    position: absolute;
+    top: 70%;
+    right: 20%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    z-index: 10;
+}
+
+header .sub-menu-wrap.open-menu {
+    z-index: 10;
+    max-height: 400px;
+}
+
+header .sub-menu {
+    border: 2px solid black;
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+header .user-info h3 {
+    font-weight: 500;
+}
+
+header .user-info img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+header .sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 10px;
+}
+
+header .sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+header .sub-menu-link p {
+    width: 100%;
+}
+
+header .sub-menu-link span {
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+header .sub-menu-link:hover span {
+    transform: translateX(5px);
+}
+
+header .sub-menu-link:hover p {
+    font-weight: 600;
+}
+
+/* CSS ALERTA ANADIR CARRITO */
+.alert {
+    padding: 28px 49px;
+    min-width: 420px;
+    position: absolute;
+    right: 2px;
+    bottom: -650px;
+    overflow: hidden;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.alert.showAlert {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.alert.show {
+    animation: show_slide 1s ease forwards;
+}
+
+@keyframes show_slide {
+    0% {
+        transform: translateX(100%);
+    }
+    40% {
+        transform: translateX(-10%);
+    }
+    80% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.alert.hide {
+    animation: hide_slide 1s ease forwards;
+}
+
+@keyframes hide_slide {
+    0% {
+        transform: translateX(-10px);
+    }
+    40% {
+        transform: translateX(0%);
+    }
+    80% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.alert .fa-exclamation-circle {
+    position: absolute;
+    left: 20px;
+    bottom: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+
+.alert .msg {
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.alert .close-btn {
+    position: absolute;
+    right: 0px;
+    bottom: 30%;
+    transform: translateX(-50%);
+    padding: 20px 18px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background: #a3ff66;
+}
+
+.close-btn .fa-times {
+    bottom: 50px;
+    font-size: 22px;
+    line-height: 10px;
+}
+
+/* Clases para los colores rojo y verde */
+.alert.red {
+    background: #ff0000;
+    border-left: 8px solid #a30000;
+}
+
+.alert.red .msg,
+.alert.red .fa-exclamation-circle,
+.alert.red .fa-times {
+    color: #a30000;
+}
+
+.alert.red .msg, .alert.red .fa-times {
+    color: black;
+}
+
+.alert.red .close-btn {
+    background: #ff4d4d;
+}
+
+.alert.red .close-btn:hover {
+    background: #ff1a1a;
+}
+
+.alert.green {
+    background: #a5ff60;
+    border-left: 8px solid #02ff39;
+}
+
+.alert.green .msg,
+.alert.green .fa-exclamation-circle,
+.alert.green .fa-times {
+    color: #92dc86;
+}
+
+.alert.green .msg, .alert.green .fa-times {
+    color: black;
+}
+
+.alert.green .close-btn {
+    background: #4dff4d;
+}
+
+.alert.green .close-btn:hover {
+    background: #a3ff66;
+}

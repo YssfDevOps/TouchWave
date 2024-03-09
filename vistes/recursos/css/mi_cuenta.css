@@ -1,0 +1,145 @@
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(212,212,212,1) 67%, rgba(207,207,207,1) 100%);
+    max-width: 100%; 
+    overflow-x: hidden; 
+}
+
+img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', sans-serif;
+    color : white;
+}
+
+
+li, a, button {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    color : black;
+    text-decoration: none;
+}
+
+header {
+    width: 100%; 
+    position : relative;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgb(112,103,255);
+    background: linear-gradient(90deg, rgba(112,103,255,1) 0%, rgba(73,215,226,1) 61%, rgba(255,255,255,1) 100%);
+}
+
+.left, .right {
+    position: absolute;
+}
+
+.left {
+    left: 0;
+    padding-left: 200px;
+}
+
+.right {
+    right: 0; 
+    padding-right: 200px;
+}
+
+.logo {
+    cursor : pointer;
+}
+
+button {
+    padding : 10px 35px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px; 
+}
+
+button:hover {
+    color: white;
+    background: rgb(126,99,249);
+    background: linear-gradient(90deg, rgba(126,99,249,1) 34%, rgba(73,215,226,1) 100%, rgba(255,255,255,1) 100%);
+}
+
+/*CSS Mostrar información*/
+.container {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100vh - 50px);
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+}
+
+.container h1 {
+    color: black;
+}
+
+.container .rightbox {
+    background: #fff;
+    width: 600px;
+    height: 650px;
+    box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .rightbox h2 {
+    color: #777;
+    text-transform: uppercase;
+    font-size: 8px;
+    letter-spacing: 1px;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+
+.container .rightbox .input, .container .rightbox p {
+    border: 0;
+    border-bottom: 2px solid #3fb6a8;
+    width: 100%;
+    font-size: 1em;
+    padding: 7px 0;
+    color: #070707;
+    outline: none;
+}
+
+.container input[type="submit"] {
+    padding : 10px 35px;
+    background-color: rgb(83, 255, 60);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 120px;
+    display: flex;
+}
+
+.container input[type="submit"]:hover {
+    color: white;
+    background: rgb(126,99,249);
+    background: linear-gradient(90deg, rgba(126,99,249,1) 34%, rgba(73,215,226,1) 100%, rgba(255,255,255,1) 100%);
+}

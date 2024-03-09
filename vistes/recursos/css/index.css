@@ -1,0 +1,213 @@
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(212,212,212,1) 67%, rgba(207,207,207,1) 100%);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', sans-serif;
+    color : white;
+}
+
+header {
+    width: 100%;
+    position : relative;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgb(112,103,255);
+    background: linear-gradient(90deg, rgba(112,103,255,1) 0%, rgba(73,215,226,1) 61%, rgba(255,255,255,1) 100%);
+}
+
+li, a, button {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    color : black;
+    text-decoration: none;
+}
+
+.left, .right {
+    position: absolute;
+}
+
+.left {
+    left: 0;
+    padding-left: 200px;
+}
+
+.right {
+    right: 0;
+    padding-right: 200px;
+}
+
+.logo {
+    cursor : pointer;
+}
+
+button {
+    padding : 10px 35px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+}
+
+button:hover {
+    color: white;
+    background: rgb(126,99,249);
+    background: linear-gradient(90deg, rgba(126,99,249,1) 34%, rgba(73,215,226,1) 100%, rgba(255,255,255,1) 100%);
+}
+
+/*CSS DE MARCAS DE MOVILES*/
+.marca {
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border: 2px solid black;
+}
+
+.marca:hover {
+    transform: scale(1.05);
+}
+
+.marca-image {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.marca.selected {
+    border-color : blue;
+}
+
+.marca-text {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .marca {
+        width: calc(20% - 20px);
+    }
+}
+
+/* Back button */
+.back {
+    display: block;
+    margin-right: 90%; 
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+} 
+
+/*CSS DE LOS MOVILES*/
+#productes {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    width: 100vw;
+}
+
+.producto {
+    width: 48%;  
+    height: 300px; 
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    box-sizing: border-box; 
+    border: 2px solid black;
+}
+
+.producto-seleccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.producto-nombre {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0;
+    border-radius: 20px 20px 0 0; 
+    width: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
+
+.producto-imagen {
+    width: 17%;
+    object-fit: cover;
+    margin-left: 200px;
+}
+
+.producto-detalles {
+    padding: 0 10px 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: right;
+    margin-right: 200px;
+}
+
+.producto-precio {
+    color: red;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.add-to-cart {
+    background-color: rgb(57, 255, 54);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 5px;
+    width: 95%;
+    left: 47.5%;
+    transform: translateX(-50%);
+}
